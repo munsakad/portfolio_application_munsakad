@@ -1,0 +1,18 @@
+{
+  "remove": [
+    "app/api",
+    "middleware.js"
+  ],
+  "patch": [
+    {
+      "file": "app/auth/login/page.js",
+      "find": "window.location.href = '/dashboard'",
+      "replace": "window.location.href = (process.env.NEXT_PUBLIC_BASE_PATH || '') + '/dashboard'"
+    },
+    {
+      "file": "app/auth/register/page.js",
+      "find": "window.location.href = '/dashboard'",
+      "replace": "window.location.href = (process.env.NEXT_PUBLIC_BASE_PATH || '') + '/dashboard'"
+    }
+  ]
+}
