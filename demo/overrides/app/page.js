@@ -59,7 +59,7 @@ export default function Home() {
                 Dashboard
               </Link>
             ) : (
-              <div className="flex gap-3">
+              <div className="flex items-center gap-3">
                 <Link href="/auth/login" className="text-sm text-slate-300 hover:text-white transition">Login</Link>
                 <Link href="/auth/register" className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold text-sm px-4 py-2 rounded-lg transition">
                   Get Started
